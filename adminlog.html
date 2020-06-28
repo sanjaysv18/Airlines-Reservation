@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<center><h1 style="color:Red ;text-shadow: 5px 10px 50px rgba(0,0,0,0.5)"><marquee> Airline Reservation System</marquee></h1><center>
+<body  style="background-color:#8080ff ">
+<br><br><br><hr>
+<h2><center>Enter Login Credentials<center> </h2>
+
+	   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+ <div class="container">
+		
+		
+		<center>
+		<style>.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width:250px
+}
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Style the submit button */
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+  </style><center><br><br><br>
+   <form class="form-inline" action="auth" method ="Post" >
+  <label for="username"><center><b><b>Username:</label>
+  <input type="text" id="username" placeholder="Username" name="username"><br><br>
+  <label for="passwrod"><b><b>Password:</label>
+  <input type="password" id="passwrod" placeholder="Enter password" name="password"><br><br>
+  <label>
+  </label>
+  <button type="submit">Submit</button>
+</form> 
+<!--
+		<form  class="form-inline" size= "5" action="auth" method="POST" >
+		<label for="username"><center>Username:</label>
+				<input type="text" name="username" placeholder="Username" required><br><br><br>
+				  <label for="passwrod">Password:</label>
+			<input type="password" name="password" placeholder="Password" required><br>
+				<input type="submit" value="login">
+			</form>
+</center>
+-->
+	</div>
+</body>
+</html>

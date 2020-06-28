@@ -1,0 +1,6 @@
+{"_id":{"$oid":"5ead05b582f21562a2ce002f"},"tid":1.0,"fid":"BA118","pid":1.0,"cost":"45000"}
+{"_id":{"$oid":"5ead05d282f21562a2ce0030"},"tid":2.0,"fid":"9W416","pid":2.0,"cost":"5000"}
+{"_id":{"$oid":"5ead05ec82f21562a2ce0031"},"tid":3.0,"fid":"IS726","pid":3.0,"cost":"6500"}
+{"_id":{"$oid":"5ee24a9eb2c6a126fc43db5b"},"tid":51737,"fid":"9W416","pid":1,"cost":"5000"}
+{"_id":{"$oid":"5ee24ad303e3e92b2cbab0c5"},"tid":153834,"fid":"9W416","pid":1,"cost":"5000"}
+{"_id":{"$oid":"5ee24adc03e3e92b2cbab0c7"},"tid":187889,"fid":"9W416","pid":1,"cost":"5000"}

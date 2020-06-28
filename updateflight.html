@@ -1,0 +1,76 @@
+<?php
+include"sqlconnect.php";
+session_start();
+error_reporting(0);
+?>
+<html>
+<head>
+<h1>    
+
+<center>Airline Reservation System</center>
+
+ </h1>
+	<title> amsdb </title>
+	<link rel="stylesheet" a href="css\style.css">
+	<link rel="stylesheet" a href="css\font-awesome.min.css">
+</head>
+<body>
+<div>
+			<ul>
+				<li><a href="homepage.php"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+				<li><a href="adminbase.php"><i class="fa fa-desktop" aria-hidden="true"></i>Dashboard</a></li>  
+				<li><a href="basepage.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+			</ul>
+		</div>
+<h2><center>enter fligth details<center> </h2>
+
+	<div class="container">
+	<img src="image/login.png"/>
+		<form action="" method="GET">
+		<center>
+Flight Code:<input type="text" name="fcode" value="<?php echo $_GET['fcode'];?>"/><br><br>
+flight name:<input type="text" name="fname" value="<?php echo $_GET['fname'];?>"/><br><br>
+boarding:<input type="text" name="boar" value="<?php echo $_GET['boar'];?>"/><br><br>
+destination:<input type="text" name="dest" value="<?php echo $_GET['dest'];?>"/><br><br>
+boarding time:<input type="text" name="btime" value="<?php echo $_GET['btime'];?>"/><br><br>
+departure time:<input type="text" name="dtime" value="<?php echo $_GET['dtime'];?>"/><br><br>
+duration:<input type="text" name="dur" value="<?php echo $_GET['dur'];?>"/><br><br>
+deparuture date:<input type="text" name="depdate" value="<?php echo $_GET['depdate'];?>"/><br><br>
+arrival date:<input type="text" name="arrdate" value="<?php echo $_GET['arrdate'];?>"/><br><br>
+ airport id:<input type="text" name="aid" value="<?php echo $_GET['aid'];?>"/><br><br>
+<input type="submit" name="submit" value="update"/>
+</center>
+</form>
+	</div>
+</body>
+</html>	
+	
+<?php
+if($_GET["submit"])
+{
+	$fcode=$_GET["fcode"];
+	$fname=$_GET["fname"];
+	$boar=$_GET["boar"];
+	$dest=$_GET["dest"];
+	$btime=$_GET["btime"];
+	$dtime=$_GET["dtime"];
+	$dur=$_GET["dur"];
+	$depdate=$_GET["depdate"];
+	$adate=$_GET["arrdate"];
+	$aid=$_GET["aid"];
+	$query="update flight set fname='$fname',boarding='$boar',destination='$dest',btime='$btime',dtime='$dtime',
+	jourtime='$dur',depdate='$depdate',arrdate='$adate',aid='$aid' where fid='$fcode'";
+	
+	$data=mysqli_query($conn,$query);
+	if($data)
+	{
+		echo"Airline Updated";
+	}
+	else
+	{
+		echo"no";
+	}
+}
+
+?>
+

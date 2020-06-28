@@ -1,0 +1,76 @@
+
+<html>
+<head>
+	<title> amsdb </title>
+	<link rel="stylesheet" a href="css\style.css">
+	<link rel="stylesheet" a href="css\font-awesome.min.css">
+	<h1>    
+
+<h1 style="color:Red ;text-shadow: 5px 10px 50px rgba(0,0,0,0.5)"><center><marquee>Airline Reservation System</marquee></center>
+
+ </h1>
+</head>
+<style>.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width:250px
+}
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Style the submit button */
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}</style>
+<body>
+<div><ul>
+<body style='background-color:#5dffb8'>											
+<tr><b>
+<br>
+<hr>
+<h2><center>Enter Flight No.<center> </h2>
+
+	<div class="container">
+	<center>	<form class="form-inline" action="asearch1" method="POST">
+		<center><br><br><br>
+Flight Code:<br><br><center><input type="text" name="fcode" values=""></center><br><br>
+<button type="submit">Submit</button>
+</center>
+</form>
+	</div>
+
+
+</body>
+</html>

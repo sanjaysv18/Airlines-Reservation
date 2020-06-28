@@ -1,0 +1,3 @@
+{"_id":{"$oid":"5ead068782f21562a2ce0033"},"transid":13.0,"tid":2.0,"pid":2.0,"transdate":"20/01/2020"}
+{"_id":{"$oid":"5ead069d82f21562a2ce0034"},"transid":14.0,"tid":3.0,"pid":3.0,"transdate":"29/01/2020"}
+{"_id":{"$oid":"5ef844605a8b8817080b6566"},"transid":53104,"tid":80458,"pid":1,"transdate":"2020/6/28"}

@@ -1,0 +1,6 @@
+{"_id":{"$oid":"5eacfe3e82f21562a2ce0023"},"pid":1.0,"pname":"rohit","age":20.0,"adhaarno":123123.0,"address":"bangalore","pswd":"admin"}
+{"_id":{"$oid":"5eacfe7082f21562a2ce0024"},"pid":2.0,"pname":"rahul","age":23.0,"adhaarno":1.2312323e+07,"address":"mysore","pswd":"admin"}
+{"_id":{"$oid":"5eacfe9182f21562a2ce0025"},"pid":3.0,"pname":"ritik","age":34.0,"adhaarno":1.124142e+06,"address":"delhi","pswd":"admin"}
+{"_id":{"$oid":"5eacfeb382f21562a2ce0026"},"pid":4.0,"pname":"dhruv","age":29.0,"adhaarno":123213.0,"address":"bangalore","pswd":"admin"}
+{"_id":{"$oid":"5eacfecf82f21562a2ce0027"},"pid":5.0,"pname":"aman","age":31.0,"adhaarno":3.124113e+06,"address":"bangalore","pswd":"admin"}
+{"_id":{"$oid":"5ef42ec3ac8e891f7c1623c7"},"pid":44316,"pname":"qwerty","age":"12","adhaarno":"12312","address":"bangalore","pswd":"admin"}

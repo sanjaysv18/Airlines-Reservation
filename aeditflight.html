@@ -1,0 +1,97 @@
+
+<html>
+<head>
+<h1>    
+<h1>    
+
+<center>Airline Reservation System</center>
+
+ </h1>
+
+
+ </h1>
+<title>
+amsdb
+
+</title>
+	<style>
+table {
+border-style:solid;
+border-width:2px;
+border-color:pink;
+}
+</style>
+
+
+	   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+
+<body background="background.jpg">
+
+<div>
+			<ul>
+				<li><a href="basepage.php"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+				<li><a href="Adminlog.php"><i class="fa fa-desktop" aria-hidden="true"></i>Dashboard</a></li>  
+				<li><a href="basepage.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+			</ul>
+		</div>
+<h1><center>Edit Flight <center> </h1>
+
+
+
+
+
+<?php 
+
+$query = "SELECT * FROM flight";
+$data=mysqli_query($conn,$query);
+$total=mysqli_num_rows($data);
+ echo "<table  border='1' align='center'
+<tr><b>
+<th>Flight Id</th>
+<th>Flight Name</th>
+<th>boarding</th>
+<th>Destination</th>
+<th>Boarding Time</th>
+<th>Departure Time</th>
+<th>Duration(hrs)</th>
+<th>Departure date</th>
+<th>Arrival Date</th>
+<th>Arrival Airport Id</th>
+<th>Operation</th>
+
+</b>
+</tr>";
+
+if($total!=0)
+{
+	 while($result=mysqli_fetch_assoc($data)){ 
+			
+			echo "<tr>";
+			echo"<td>".$result['fid']."</td>";
+			echo"<td>".$result['fname']."</td>";
+			echo"<td>".$result['boarding']."</td>";
+			echo"<td>".$result['destination']."</td>";
+			echo"<td>".$result['btime']."</td>";
+			echo"<td>".$result['dtime']."</td>";			
+			echo"<td>".$result['jourtime']."</td>";
+			echo"<td>".$result['depdate']."</td>";
+			echo"<td>".$result['arrdate']."</td>";
+			echo"<td>".$result['aid']."</td>";
+		    echo"<td><a href='updateflight.php?fcode=$result[fid]&fname=$result[fname]&boar=$result[boarding]&dest=$result[destination]
+			&btime=$result[btime]&dtime=$result[dtime]&dur=$result[jourtime]&depdate=$result[depdate]&arrdate=$result[arrdate]&aid=$result[aid]'>update</td>";			
+		   echo"</tr>";
+			
+			 
+			
+	 }
+	 
+}
+else
+{
+	echo "no data";
+}
+?>
+</body>
+</html>
+
